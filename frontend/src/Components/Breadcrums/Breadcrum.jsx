@@ -1,6 +1,6 @@
 import React from 'react'
 import './Breadcrum.css'
-import start from '../Assets/Star.svg'
+import start from '../assets/Star.svg'
 
 
 const Breadcrum = (props) => {

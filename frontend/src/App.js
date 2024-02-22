@@ -19,6 +19,7 @@ import { LoginSignup } from './Pages/LoginSignup';
 import { ProductDisplay } from './Components/ProductDisplay/ProductDisplay';
 import {RelateProducts} from './Components/RelatedProducts/RelateProducts';
 import {CartItems} from './Components/CartItems/CartItems';
+import { Shop } from './Pages/Shop';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/signup" element={<LoginSignup/>} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/category1" element={<ShopCategory category='category1' />} />
+          <Route path="/shop" element={<Shop />} />
           {/* <Route path="/category2" element={<ShopCategory category='category2' />} />
           <Route path="/category3" element={<ShopCategory category='category3' />} />
           <Route path="/category4" element={<ShopCategory category='category4' />} /> */}
