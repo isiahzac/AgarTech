@@ -8,13 +8,13 @@ const Sidebar = () => {
     <div className="sidebar">
       <Link to={'/addproduct'} style={{textDecoration:"none"}}>
         <div className="sidebar-item"> 
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i className="fa-solid fa-cart-shopping"></i>
         <p>Add Product</p>
         </div>
       </Link>
       <Link to={'/listproduct'} style={{textDecoration:"none"}}>
         <div className="sidebar-item"> 
-        <i class="fa-solid fa-rectangle-list"></i>
+        <i className="fa-solid fa-rectangle-list"></i>
         <p>Product List</p>
         </div>
       </Link>
