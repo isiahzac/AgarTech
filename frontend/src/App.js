@@ -10,27 +10,29 @@ import { Vende } from './Pages/Vende';
 import { QuienSomos } from './Pages/QuienSomos';
 import { Ayuda } from './Pages/Ayuda'
 import { Footer } from './Components/Footer/Footer'
+import { ShopCategory } from './Pages/ShopCategory'
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar/>
+        <Navbar/>
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/vende' element={<Vende category='vende'/>}/>
-          <Route path='/quien' element={<QuienSomos category='quien'/>}/>
-          <Route path='/ayuda' element={<Ayuda category='ayuda'/>}/>
-           <Route path='product' element={<Product />}>
-            <Route path=':productId' element={<Product />} />
-          </Route> 
-          <Route path='login' element={<LoginSignup />}/> 
-          <Route path='cart' element={<Cart />}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/vende" element={<Vende category='vende' />} />
+          <Route path="/quien" element={<QuienSomos category='quien' />} />
+          <Route path="/ayuda" element={<Ayuda category='ayuda' />} />
+          <Route path="/login" element={<LoginSignup />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/category1" element={<ShopCategory category='category1' />} />
+          {/* <Route path="/category2" element={<ShopCategory category='category2' />} />
+          <Route path="/category3" element={<ShopCategory category='category3' />} />
+          <Route path="/category4" element={<ShopCategory category='category4' />} /> */}
+          <Route path="/product" element={<Product />} />
+          <Route path="/product/:productId" element={<Product />} />
         </Routes>
         <Footer/>
       </BrowserRouter>
-
-
     </div>
   );
 }

@@ -4,12 +4,14 @@ import './Navbar.css'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 export const Navbar = () => {
 
     const [menu, setMenu] = useState('home');
   return (
+    <div className="navbar-container">
     <div className='navbar'>
         <div className="nav-logo">
             <h1>AgarTech</h1>
@@ -24,6 +26,18 @@ export const Navbar = () => {
             <Link to="/login"><button>Login</button></Link>
             <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} size="2xl" /></Link>
             <div className="nav-cart-count">0</div>
+        </div>
+
+    </div>
+    <div className="hamburger-menu-container">
+            <FontAwesomeIcon className='hamburger-menu-icon' icon={faBars} size="2xl" />
+            <ul className="nav-categories">
+                <li><Link style={{textDecoration: 'none'}} to="/category1">Category 1</Link></li>
+                <li><Link style={{textDecoration: 'none'}} to="/category2">Category 2</Link></li>
+                <li><Link style={{textDecoration: 'none'}} to="/category3">Category 3</Link></li>
+                <li><Link style={{textDecoration: 'none'}} to="/category4">Category 4</Link></li>
+            </ul>
+
         </div>
     </div>
   )
