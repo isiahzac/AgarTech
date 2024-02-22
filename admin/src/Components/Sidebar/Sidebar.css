@@ -1,7 +1,7 @@
 .sidebar{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top:none;
     gap: 20px;
     width: 100%;
     max-width: 250px;
@@ -13,8 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 20px;
-    padding: 5px 10px;
+    margin: 0 10px;
+    padding: 10px 10px;
     border-radius: 6px;
     background: #ebe9e9;
     gap: 20px;
