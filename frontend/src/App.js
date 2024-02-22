@@ -2,6 +2,10 @@ import './App.css';
 import { Navbar }  from './Components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home } from './Pages/Home';
+import { Breadcrum } from './Components/Breadcrum/Breadcrum';
+import { Item } from './Components/Item/Item';
+import { DescripcionBox } from './Components/DescripcionBox/DescripcionBox';
+
 // import { ShopCategory } from './Pages/ShopCategory';
 import { Product } from './Pages/Product';
 import { Cart } from './Pages/Cart';
@@ -12,6 +16,10 @@ import { Ayuda } from './Pages/Ayuda'
 import { Footer } from './Components/Footer/Footer'
 import { ShopCategory } from './Pages/ShopCategory'
 import { LoginSignup } from './Pages/LoginSignup';
+import { ProductDisplay } from './Components/ProductDisplay/ProductDisplay';
+import {RelateProducts} from './Components/RelatedProducts/RelateProducts';
+import {CartItems} from './Components/CartItems/CartItems';
+
 
 function App() {
   return (
@@ -35,6 +43,12 @@ function App() {
         </Routes>
         <Footer/>
       </BrowserRouter>
+      <Breadcrum/>
+      <Item/>
+      <DescripcionBox/>
+      <CartItems/>
+      <ProductDisplay/>
+      <RelateProducts/>
     </div>
   );
 }
