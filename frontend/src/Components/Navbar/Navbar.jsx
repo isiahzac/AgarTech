@@ -5,6 +5,8 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import logo from '../assets/logo.png'
+import card_icon from '../assets/cart_icon.png'
 
 
 export const Navbar = () => {
@@ -14,6 +16,7 @@ export const Navbar = () => {
     <div className="navbar-container">
     <div className='navbar'>
         <div className="nav-logo">
+        <img src={logo} alt="" />
             <h1>AgarTech</h1>
         </div>
         <ul className="nav-menu">
