@@ -40,15 +40,15 @@ export const Ayuda = () => {
 
   return (
     <div className="ayuda">
-      <h1>Aquí estamos, ¿Necesitas ayuda?</h1>
         <div className="ayuda-container">
+        <h1>¿Necesitas ayuda?</h1>
+        <h2>¡Aquí Estamos!</h2>
             <div className="ayuda-fields">
                 <input type="text" placeholder="Name" value={name} onChange={handleNameChange} required/>
                 <input type="email" placeholder="Email" value={email} onChange={handleEmailChange} required/>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Cuéntanos aquí" value={text} onChange={handleTextChange} required></textarea>
-
             </div>
-            <button type="submit">Home</button>
+            <button type="submit">Enviar</button>
         </div>
     </div>
   )

@@ -1,22 +1,32 @@
 .ayuda{
     width: 100%;
-    height:130vh;
-    background: #ffffff;
-    padding-top: 100px;
+    height:180vh;
+    background: #032045;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .ayuda h1{
-    font-size: 40px;
+    font-size: 60px;
+    text-align: start;
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+
+.ayuda h2 {
+    font-size: 60px;
+    text-align: start;
+    margin-bottom: 50px;
 }
 
 
 .ayuda-container{
-    width:650px;
-    height: 800px;
-    background: rgb(51, 97, 111);
+    width: 60vw;
+    height: 130vh;
+    background: #ffffff;
     margin: 50px auto;
     padding: 50px 80px;
     border-radius:30px;
@@ -40,12 +50,13 @@
     font-size: 18px;
     border-radius: 20px;
     margin-bottom: 50px;
+    box-shadow: 0 1px 3px 0 black;
 }
 
 .ayuda-fields textarea {
     height: 300px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 20px;
     border: 1px solid #c9c9c9;
     outline: none;
@@ -53,18 +64,21 @@
     font-size: 18px;
     border-radius: 20px;
     margin-bottom: 50px;
+    box-shadow: 0 1px 3px 0 black;
 }
 
 .ayuda-container button {
-    width: 680px;
-    height: 72px;
-    color:white;
-    background: rgb(146, 56, 0);
+    width: 102%;
+    height: 75px;
+    color:rgb(0, 0, 0);
+    background: #FFA500;
     margin-top: 30px;
     border: none;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
+    box-shadow: 0 1px 3px 0 black;
 }
+
 

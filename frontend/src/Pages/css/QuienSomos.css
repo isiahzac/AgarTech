@@ -1,0 +1,130 @@
+.quiensomos {
+    width: 100vw;
+    height: auto;
+
+}
+
+/*First section*/
+
+.header-container {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    background: #032045;
+    justify-content: center;
+
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centert;
+    gap: 20px;
+    line-height: 1.5; 
+    width: 40%;
+}
+
+.header-title {
+    font-size: 60px;
+}
+
+.header-text {
+    font-size: 30px;
+}
+
+.header-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/*Second section*/
+
+.mid-container {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    background: white;
+    justify-content: center;
+
+}
+
+.mid-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centert;
+    gap: 20px;
+    line-height: 1.5; 
+    width: 40%;
+}
+
+.mid-title {
+    font-size: 60px;
+}
+
+.mid-text {
+    font-size: 30px;
+}
+
+.mid-left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*Third section*/
+
+.bottom-container {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    background: #032045;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.bottom-title {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.bottom-title h2 {
+    font-size: 60px;
+}
+
+.bottom {
+    width: 80%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-text {
+    font-size: 30px;
+}
+
+.bottom-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

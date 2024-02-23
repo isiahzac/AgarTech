@@ -17,12 +17,6 @@
     font-weight: 600;
 }
 
-.item-price-old {
-    color: rgb(147, 146, 146);
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: line-through;
-}
 
 .item:hover {
     transform: scale(1.05);

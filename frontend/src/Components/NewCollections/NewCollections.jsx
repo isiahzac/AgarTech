@@ -4,7 +4,7 @@ import './NewCollections.css'
 export const NewCollections = () => {
   return (
     <div className="new-collections">
-        <h1>Popular</h1>
+        <h1>Recién llegados</h1>
         <hr />
         <div className="collections">
             {/* {data_product.map((item, i) => {
