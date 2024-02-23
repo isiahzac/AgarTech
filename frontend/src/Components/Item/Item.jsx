@@ -10,10 +10,10 @@ export const Item = (props) => {
         <p>{props.name}</p>
         <div className="item-prices">
             <div className="item-price-new">
-                ${props.new_price}
+                <p>${props.price}</p>
             </div>
             <div className="item-price-old">
-                ${props.old_price}
+                <p>${props.old_price}</p>
             </div>
         </div>
     </div>

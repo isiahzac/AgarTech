@@ -5,13 +5,14 @@
     justify-content: center;
     gap: 20px;
     height: 90vh;
-    background: #544949;
+    background: #ffffff;
 }
 
 .popular h1 {
     color: #171717;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .popular hr {

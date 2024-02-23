@@ -19,42 +19,35 @@ let all_product = [
     name: "Honor Magic V2",
     category: "Smartphone",
     image: p1_img,
-    new_price: 450.00,
-    old_price: 600.50,
+    price: 400
 },
 {
     id: 2,
     name: "Honor Magic V2",
     category: "Smartphone",
     image: p2_img,
-    new_price: 750.00,
-    old_price: 850.50,
-
+    price: 400
 },
 {
     id: 3,
     name: "Honor Magic V2",
     category: "Smartphone",
     image: p3_img,
-    new_price: 350.00,
-    old_price: 400.50,
-
+    price: 400
 },
 {
     id: 4,
     name: "Xiaomi 13T Pro",
     category: "Smartphone",
     image: p4_img,
-    new_price: 850.00,
-    old_price: 990.50,
+    price: 450
 },
 {
     id: 5,
     name: "Xiaomi 13T Pro",
     category: "Smartphone",
     image: p5_img,
-    new_price: 650.00,
-    old_price: 780.50,
+    price: 450
 },
 {
     
@@ -62,72 +55,63 @@ let all_product = [
     name: "Xiaomi 13T Pro",
     category: "Smartphone",
     image: p6_img,
-    new_price: 450.00,
-    old_price: 600.50,
+    price: 450
 },
 {
     id: 7,
     name: "Robotica",
     category: "Robot",
     image: p7_img,
-    new_price: 700.00,
-    old_price: 750.50,
+    price: 350
 },
 {
     id: 8,
     name: "Robotica",
     category: "Robot",
     image: p8_img,
-    new_price: 250.00,
-    old_price: 800.50,
+    price: 350
 },
 {
     id: 9,
     name: "Robotica",
     category: "Robot",
     image: p9_img,
-    new_price: 350.00,
-    old_price: 400.50,
+    price: 350
 },
 {
     id: 10,
     name: "Robotica",
     category: "Robot",
     image: p10_img,
-    new_price: 460.00,
-    old_price: 500.50,
+    price: 350
 },
 {
     id: 11,
     name: "Robotica",
     category: "Robot",
     image: p11_img,
-    new_price: 300.00,
-    old_price: 450.50,
+    price: 350
 },
 {
     id: 12,
     name: "Robotica",
     category: "Robot",
     image: p12_img,
-    new_price: 550.00,
-    old_price: 600.50,
+    price: 350
 },
 {
     id: 13,
     name: "Robotica",
     category: "Robot",
     image: p13_img,
-    new_price: 620.00,
-    old_price: 800.50,
+    price: 350
 },
 {
     id: 14,
     name: "Robotica",
     category: "Robot",
     image: p14_img,
-    new_price: 500.00,
-    old_price: 600.50,
+    price: 350
 },
 
 ]

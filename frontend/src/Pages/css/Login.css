@@ -1,21 +1,23 @@
 .login{
     width: 100%;
-    height:80vh;
-    background: #ffffff;
+    height:100vh;
+    background: #032045;
     padding-top: 100px;
 }
 
 .login-container{
-    width: 580px;
-    height: 550px;
-    background: rgb(51, 97, 111);
+    width: 650px;
+    height: 600px;
+    background: white;
     margin: auto;
     padding: 40px 60px;
     border-radius:30px;
+    margin-top: 100px;
 }
 
 .login-container h1{
     margin: 20px 0;
+    font-weight: 500;
 }
 
 .login-fields {
@@ -29,46 +31,52 @@
     height: 72px;
     width: 100%;
     padding-left: 20px;
+    margin-top: 20px;
     border: 1px solid #c9c9c9;
     outline: none;
     color: #5c5c5c;
     font-size: 18px;
     border-radius: 20px;
+    box-shadow: 0 1px 3px 0 black;
+
 }
 
 .login-container button {
-    width: 600px;
+    width: 680px;
     height: 72px;
-    color:white;
-    background: rgb(146, 56, 0);
-    margin-top: 30px;
+    color:rgb(0, 0, 0);
+    background: #FFA500;
+    margin-top: 50px;
     border: none;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
     cursor: pointer;
     border-radius: 20px;
+    box-shadow: 0 1px 3px 0 black;
 }
 
 .login-login {
-    margin-top: 20px;
-    color: #f8f8f8;
-    font-size: 18px;
+    margin-top: 50px;
+    color: #898888;
+    font-size: 20px;
     font-weight: 500;
+    
 }
 
 .login-login span {
-    color: rgb(146, 56, 0);
+    color: #FFA500;
     cursor: pointer;
-    
+    text-decoration: none;
 }
+
 
 .login-agree {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-top: 70px;
-    gap: 20px;
-    color : #f8f8f8;
+    margin-top: 50px;
+    gap: 18px;
+    color : #898888;
     font-size: 18px;
     font-weight: 500;
 }
