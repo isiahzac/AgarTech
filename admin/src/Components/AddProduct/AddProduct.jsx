@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import './AddProduct.css'
+import upload_area from '../../assets/uploadIcon.svg'
+
+
 const AddProduct = () => {
 
     const [image, setImage] = useState(false)
@@ -11,43 +14,43 @@ const AddProduct = () => {
         old_price: ""
     })
 
-    const imageHanndler = (e) => {
+    const imageHandler = (e) => {
         setImage(e.target.files[0]);
     }
 
     const changeHandler = (e) => {
-        setProductsDetails({ ...productDetails, [e.target.name]: e.target.value })
+        setProductDetails({ ...productDetails, [e.target.name]: e.target.value })
     }
 
-    const Add_product = async () => {
+    const AddProduct = async () => {
         console.log(productDetails);
         let responseData;
         let product = productDetails;
 
-        let formData = new formData();
+        let formData = new FormData();
         formData.append('product', image);
 
-        await fetch('htpp://localhost:4000/upload', {
+        await fetch('http://localhost:4000/upload', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
             },
             body: formData,
-        }).then((resp) => resp.json()).then((data) => { responseData });
+        }).then((resp) => resp.json()).then((data) => { responseData = data; });
 
         if (responseData.success) {
             product.image = responseData.image_url;
             console.log(product);
-            await fetch('htpp//localhost:4000/addproduct', {
-                method: 'Post',
+            await fetch('http://localhost:4000/addproduct', {
+                method: 'POST',
                 headers: {
                     Accept: 'application/json',
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(product),
-            }).then((resp) => resp.jason()).then((data) => {
-                data.success ? alert("Product Added"):alert("Failed")
-         })
+            }).then((resp) => resp.json()).then((data) => {
+                data.success ? alert("Product Added") : alert("Failed")
+            })
         }
 
     }
@@ -79,7 +82,8 @@ const AddProduct = () => {
             </div>
             <div className="addprouduct-itemfield">
                 <label htmlFor="file-input">
-                    <img src={image ? URL.createOjectURL(image) : upload_area} className="addproduct-thumnail-img" />
+                <img src={image ? URL.createObjectURL(image) : upload_area} alt="Cargar imagen" className="addproduct-thumbnail-img" />
+
                 </label>
                 <input onChange={imageHandler} type="file" name="image" id="file-input" hidden />
             </div>
